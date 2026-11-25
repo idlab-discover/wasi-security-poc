@@ -1,0 +1,3 @@
+# No [storage] section: the guest gets no filesystem at all, even if the host
+# was started with --dir (a policy replaces the host-wide preopens).
+version = "0.0.1"

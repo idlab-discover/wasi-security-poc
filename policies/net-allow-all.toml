@@ -1,0 +1,8 @@
+# Wide open, for contrast: unspecified IP and port 0 match everything, no
+# scheme means both TCP and UDP.
+version = "0.0.1"
+
+[network]
+allow_ip_name_lookup = true
+bind = ["0.0.0.0:0"]
+connect = ["0.0.0.0:0"]

@@ -1,0 +1,6 @@
+# DNS plus UDP to a single peer. No TCP rule, so TCP is switched off.
+version = "0.0.1"
+
+[network]
+allow_ip_name_lookup = true
+connect = ["udp://127.0.0.1:7979"]

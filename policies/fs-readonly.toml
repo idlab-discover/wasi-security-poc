@@ -1,0 +1,5 @@
+# Both directories read-only: reads work, every write is refused.
+version = "0.0.1"
+
+[storage]
+readonly = ["demo/models::/models", "demo/data::/data"]

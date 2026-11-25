@@ -1,0 +1,13 @@
+[package]
+name = "wasmtime-elastic-wasi-security-poc"
+description = "Wasmtime CLI-style runner that sandboxes guests with ELASTIC WASI security policies"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+elastic-wasi-security.workspace = true
+clap = { version = "4", features = ["derive"] }
+wasmtime = "50.0.0"
+wasmtime-wasi = "50.0.0"

@@ -1,0 +1,6 @@
+[package]
+name = "net-probe"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]

@@ -1,0 +1,7 @@
+# The guest may listen on 127.0.0.1:7878 and connect to that one address only.
+version = "0.0.1"
+
+[network]
+allow_ip_name_lookup = false
+bind = ["tcp://127.0.0.1:7878"]
+connect = ["tcp://127.0.0.1:7878"]

@@ -1,0 +1,6 @@
+# Valid TOML, but the host directory does not exist. The run fails instead of
+# silently starting the guest with fewer capabilities than the policy asked for.
+version = "0.0.1"
+
+[storage]
+readonly = ["demo/does-not-exist::/models"]

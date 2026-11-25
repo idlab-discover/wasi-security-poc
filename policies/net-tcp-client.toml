@@ -1,0 +1,6 @@
+# Outbound TCP to any port on loopback (port 0 is a wildcard), nothing else.
+# No bind rule, so the guest cannot listen.
+version = "0.0.1"
+
+[network]
+connect = ["tcp://127.0.0.1:0"]

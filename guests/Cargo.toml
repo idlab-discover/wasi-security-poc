@@ -1,0 +1,11 @@
+[workspace]
+resolver = "3"
+members = ["fs-probe", "net-probe", "env-probe"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+
+[profile.release]
+opt-level = "s"
+strip = true

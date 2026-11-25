@@ -1,0 +1,7 @@
+# Models read-only, /data read-write. The guest only ever sees /models and
+# /data; the host paths (relative to the working directory) stay hidden.
+version = "0.0.1"
+
+[storage]
+readonly = ["demo/models::/models"]
+mount = ["demo/data::/data"]

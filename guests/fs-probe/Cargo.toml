@@ -1,0 +1,6 @@
+[package]
+name = "fs-probe"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]

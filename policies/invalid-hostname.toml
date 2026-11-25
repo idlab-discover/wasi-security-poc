@@ -1,0 +1,6 @@
+# Rejected before the guest is even loaded: rules are socket addresses, a
+# hostname is not allowed.
+version = "0.0.1"
+
+[network]
+connect = ["tcp://db.example.com:5432"]

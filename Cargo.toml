@@ -1,0 +1,16 @@
+# Native host side. The Wasm guests in `guests/` are a separate workspace
+# because they build for wasm32-wasip2.
+[workspace]
+resolver = "3"
+members = ["host"]
+exclude = ["guests"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+
+[workspace.dependencies]
+anyhow = "1.0"
+# Pinned revision; built against wasmtime-wasi 50.
+elastic-wasi-security = { git = "https://github.com/elasticproject-eu/wasi-security", rev = "ee83c55a2186cbaea0f1a86bf0cce7298cd42b05" }

@@ -1,0 +1,3 @@
+# A policy without [network] rules: wasi:sockets is deny-by-default, so TCP,
+# UDP and DNS are all switched off.
+version = "0.0.1"

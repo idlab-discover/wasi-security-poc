@@ -1,0 +1,9 @@
+# WASI argv and environment come from the policy. The policy's [env] is
+# applied after `--env`, so it wins on a conflict.
+version = "0.0.1"
+
+arguments = ["--verbose", "--mode=batch"]
+
+[env]
+LOG_LEVEL = "debug"
+TENANT = "elastic-demo"
